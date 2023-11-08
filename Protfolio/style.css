@@ -1,0 +1,342 @@
+/* Improve the overall style of the website */
+@import url('https://fonts.googleapis.com/css?family=Your+Selected+Font');
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Your Selected Font', sans-serif;
+    cursor: none; /* Hide the default cursor */
+}
+.custom-cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF; /* Set your cursor color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Allows content beneath to remain interactive */
+}
+
+header {
+    background-image: url('header-background.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'YourVariableFont', sans-serif;
+    font-variation-settings: 'wght' 600, 'slnt' 10, 'ital' 1;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF; /* Change to your preferred hover color */
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 100;
+}
+
+
+/* Style the about section */
+#about {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Style the portfolio section */
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Style the masonry grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+
+/* Style the contact section */
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Style the testimonials */
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+}
+
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Add your preferred hover scale */
+}
+
+
+/* Style the parallax section */
+.parallax {
+    background-image: url('parallax-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin: 20px;
+}
+
+.parallax h2 {
+    font-size: 2.5rem;
+}
+
+.parallax p {
+    font-size: 1.2rem;
+}
+
+/* Style the skills section and progress bars */
+.skills {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress {
+    background-color: #007BFF; /* Set your preferred color */
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+/* Add dark mode styles to your existing CSS */
+body.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #000;
+}
+
+.dark-mode .project {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Style the dark mode toggle button */
+#dark-mode-toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Create a button hover effect */
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* Add a gradient background to a section */
+.gradient-section {
+    background: linear-gradient(135deg, #007BFF, #00F260); /* Adjust colors as desired */
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Create text with gradient fill */
+.gradient-text {
+    background: linear-gradient(45deg, #007BFF, #00F260);
+    /* -webkit-background-clip: text; */
+    color: transparent;
+}
+/* Add a transition class for smooth page transitions */
+.transition-page {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.section-with-image {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    filter: grayscale(0.2) brightness(0.8);
+    color: #fff;
+}
+/* Apply page transition effects */
+.page-transition-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.page-transition-exit {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* Create a 3D card effect in your CSS */
+.card {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #007BFF;
+}
+
+.back {
+    background-color: #00F260;
+    transform: rotateY(180deg);
+}
+
+
+/* Add more custom styling as needed */
